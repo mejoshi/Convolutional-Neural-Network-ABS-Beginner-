@@ -2,7 +2,7 @@
 CNN or Convulation Neural Network, I've created a CNN architecure, where i added 4 CRP, 1 flatten and 6 hidden layers. I've got 89% Accuracy with this architecure.
 
 
-Layer (type)                 Output Shape              Param   
+Layer (type)                  Output Shape            Param   
 
 conv2d_1 (Conv2D)            (None, 148, 148, 32)      896       
 activation_1 (Activation)    (None, 148, 148, 32)      0         
