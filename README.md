@@ -1,11 +1,58 @@
 # Convulation Neural Network
 CNN or Convulation Neural Network, I've created a CNN architecure, where i added 4 CRP, 1 flatten and 6 hidden layers. I've got 89% Accuracy with this architecure.
 
-![](/images/1.jpg)
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d_1 (Conv2D)            (None, 148, 148, 32)      896       
+_________________________________________________________________
+activation_1 (Activation)    (None, 148, 148, 32)      0         
+_________________________________________________________________
+max_pooling2d_1 (MaxPooling2 (None, 74, 74, 32)        0         
+_________________________________________________________________
+conv2d_2 (Conv2D)            (None, 72, 72, 32)        9248      
+_________________________________________________________________
+activation_2 (Activation)    (None, 72, 72, 32)        0         
+_________________________________________________________________
+max_pooling2d_2 (MaxPooling2 (None, 36, 36, 32)        0         
+_________________________________________________________________
+conv2d_3 (Conv2D)            (None, 34, 34, 32)        9248      
+_________________________________________________________________
+activation_3 (Activation)    (None, 34, 34, 32)        0         
+_________________________________________________________________
+max_pooling2d_3 (MaxPooling2 (None, 17, 17, 32)        0         
+_________________________________________________________________
+conv2d_4 (Conv2D)            (None, 15, 15, 32)        9248      
+_________________________________________________________________
+activation_4 (Activation)    (None, 15, 15, 32)        0         
+_________________________________________________________________
+max_pooling2d_4 (MaxPooling2 (None, 7, 7, 32)          0         
+_________________________________________________________________
+flatten_1 (Flatten)          (None, 1568)              0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 1024)              1606656   
+_________________________________________________________________
+dense_2 (Dense)              (None, 720)               738000    
+_________________________________________________________________
+dense_3 (Dense)              (None, 600)               432600    
+_________________________________________________________________
+dense_4 (Dense)              (None, 712)               427912    
+_________________________________________________________________
+dense_5 (Dense)              (None, 600)               427800    
+_________________________________________________________________
+dense_6 (Dense)              (None, 512)               307712    
+_________________________________________________________________
+dense_7 (Dense)              (None, 7)                 3591      
+=================================================================
+Total params: 3,972,911
+Trainable params: 3,972,911
+Non-trainable params: 0
 
-Number of class we have is 7 (Mom, Dad, kalyani, adi, ashu,rudra,dadi)
-![](/images/2.jpg)
 
+Number of class we have is 7 (7 members of the family)
 Now, i've used my dad's image, to see the accuracy.
 
-![](/images/prediction.jpg)
+{'big_brother': 0, 'me': 1, 'dad': 2, 'grandmother': 3, 'sis': 4, 'mom': 5, 'younger_brother': 6}
+
+prediction : [[0. 0. 1. 0. 0. 0. 0.]]
+As you can see, this model is good. Model successfully recognised my dad.
