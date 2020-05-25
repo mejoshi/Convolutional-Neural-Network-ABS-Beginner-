@@ -137,7 +137,7 @@ model.compile(loss = 'categorical_crossentropy',
 
 history = model.fit_generator(
     generator=image_train,
-    epochs = 250,
+    epochs = 5,
     validation_data = image_test,
         )
 
